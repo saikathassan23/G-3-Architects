@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@400;500;600;800&family=Space+Mono:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+}
+
+/* shared styles */
+.btn-primary {
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding: 1.31rem 1.5rem;
+  border-radius: 0.5rem;
+  background: #ff900e;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+/*header styles */
+header {
+  background: rgba(255, 144, 14, 0.1);
+}
+.nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 3.12rem;
+}
+
+nav .nav_items ul {
+  display: flex;
+  list-style: none;
+}
+.nav_items ul li a {
+  color: #424242;
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.625rem; /* 144.444% */
+  margin-left: 2.5rem;
+}
+.nav_title {
+  color: #131313;
+  font-size: 2.8125rem;
+  font-weight: 700;
+}
+
+.header_container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 5rem;
+}
+.header_container img {
+  width: 100%;
+  margin-bottom: 2.81rem;
+}
+.header_content {
+  margin: 0 auto;
+  width: 65%;
+  text-align: center;
+}
+.header_title {
+  color: #131313;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.header_desc {
+  color: #727272;
+  font-size: 1rem;
+  line-height: 1.625rem; /* 162.5% */
+  margin-bottom: 2rem;
+}
+
+/* ---------------MEDIA QUERY --------------------------- */
+
+@media screen and (max-width: 576px) {
+  .nav_container{
+    flex-direction: column;
+  }
+  nav .nav_items ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav_items ul li{
+    margin-top: 2.5rem;
+  }
+  .nav_items ul li a {
+    font-size: 1.5rem;
+    margin-left:0rem;
+  }
+  .header_content {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .header_title {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* ---------------MEDIA QUERY --------------------------- */
